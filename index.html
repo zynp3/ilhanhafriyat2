@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İlhan Hafriyat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: #0a2342;
+      color: white;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      background: #0a2342;
+      height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    /* HİZMETLER */
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0a2342;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    /* GALERİ */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      image-rendering: -webkit-optimize-contrast;
+      filter: contrast(105%) brightness(105%) saturate(110%);
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0a2342;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #f9d342;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <img src="image/logo.jpg.lnk" width="150px" height="300px" alt="İlhan Hafriyat Logo">
+    <nav>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#iletisim">İletişim</a>
+      <a href="https://instagram.com/ilhanhafriyatt" target="_blank">Instagram</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>İlhan Hafriyat – Güvenilir Hafriyat ve Yıkım Çözümleri</h1>
+  </section>
+
+  <!-- HİZMETLER -->
+  <section id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Yıkım Hizmetleri</h3>
+        <p>Her türlü bina, fabrika ve tesis yıkımını güvenli ve kontrollü bir şekilde gerçekleştiriyoruz.</p>
+      </div>
+      <div class="service">
+        <h3>Hafriyat ve Kazı</h3>
+        <p>İnşaat öncesi temel kazı, hafriyat ve toprak taşıma hizmetlerimizle projelerinizi destekliyoruz.</p>
+      </div>
+      <div class="service">
+        <h3>Moloz ve Atık Nakliyesi</h3>
+        <p>Şantiye ve yıkım alanlarında oluşan moloz ve atıkları çevreye duyarlı şekilde bertaraf ediyoruz.</p>
+      </div>
+      <div class="service">
+        <h3>Dolgu ve Arazi Düzenleme</h3>
+        <p>Dolgu, tesviye ve arazi düzenleme çalışmalarıyla inşaat sahalarını kullanıma hazır hale getiriyoruz.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERİ -->
+  <section id="galeri">
+    <h2>Şantiye Görselleri</h2>
+    <div class="gallery">
+      <img src="image1_files/şantiye.jpg.jpg" alt="Şantiye Görseli 1">
+      <img src="img/jpg2.jpg" alt="Şantiye Görseli 2">
+      <img src="img/jpg3.jpg" alt="Şantiye Görseli 3">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="iletisim">
+    <p>📍 İstanbul / Kartal</p>
+    <p>📞 0532 762 22 11</p>
+    <p>📧 nashafriyat@hotmail.com</p>
+    <p>Bizi Instagram’da takip edin: 
+      <a href="https://instagram.com/ilhanhafriyatt" target="_blank">@ilhanhafriyatt</a>
+    </p>
+  </footer>
+</body>
+</html>
